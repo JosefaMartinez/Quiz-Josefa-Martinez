@@ -1,0 +1,16 @@
+<ul id="semana">
+    <!--Muestra la informacion de cada día indicando:
+    DIA
+    IMAGEN DE CLIMA
+    TEMPERATURA
+    CLIMA EN PALABRAS
+    -->
+    <a [routerLink]="['/formulario']" routerLinkActive="router-link-active">
+        <li *ngFor="let item of ListaClima">
+            <p>{{item.dia}}</p>
+            <img src="/assets/{{item.imagen}}">
+            <p>{{item.temperatura}}</p>
+            <p>{{item.estadoDelClima}}</p>
+        </li>  
+    </a>   
+</ul>
